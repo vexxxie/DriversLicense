@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Group7 - DriversLicense</string>
+    <string-array name="Spinner_items">
+        <item>PROFESSIONAL LICENSE</item>
+        <item>NON-PROFESSIONAL LICENSE</item>
+        <item>STUDENT LICENSE</item>
+        <item>CONDUCTOR</item>
+    </string-array>
+</resources>

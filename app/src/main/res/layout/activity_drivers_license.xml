@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriversLicense">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/phflag"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/flag" />
+
+            <TextView
+                android:id="@+id/rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="REPUBLIC OF THE PHILIPPINES"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rep"
+                android:layout_centerHorizontal="true"
+                android:text="DEPARTMENT OF TRANSPORTATION &amp; COMMUNICATIONS"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dep"
+                android:layout_centerHorizontal="true"
+                android:text="LAND TRANSPORTATION OFFICE"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/land"
+                android:layout_centerHorizontal="true"
+                android:text="EAST AVE QUEZON CITY"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/lto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/lto" />
+
+        <RelativeLayout
+            android:id="@+id/leftContainer"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header">
+
+
+            <ImageView
+                android:id="@+id/idContainer"
+                android:layout_width="180dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idContainer"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:text="SIGNATURE OF LICENSE"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="440dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/leftContainer"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LASTNAME             FIRSTNAME                     MIDDLE NAME"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lnameContainer"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/nameLabel"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/fnameContainer"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/nameLabel"
+                android:layout_marginLeft="80dp"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/mnameContainer"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/nameLabel"
+                android:layout_marginLeft="220dp"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+
+            <TextView
+                android:id="@+id/addressLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnameContainer"
+                android:text="BRGY.                     MUNICIPALITY/CITY                PROVINCE"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brgyContainer"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/addressLabel"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/munContainer"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/addressLabel"
+                android:layout_toRightOf="@id/brgyContainer"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+
+            <TextView
+                android:id="@+id/provContainer"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/addressLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/munContainer"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/infoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brgyContainer"
+                android:text="BIRTH DATE            SEX         HEIGHT (cm)      WEIGHT(kg)         NATIONALITY"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bdayContainer"
+                android:layout_width="66dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/infoLabel"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/sexContainer"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/infoLabel"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/brgyContainer"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/heightContainer"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/infoLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/sexContainer"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/weightContainer"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/infoLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/heightContainer"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+
+            <TextView
+                android:id="@+id/nationalitytContainer"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/infoLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toRightOf="@id/weightContainer"
+                android:fontFamily="serif"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/idInfoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bdayContainer"
+                android:text="RESTRICTION       CONDITION           AGY                 EXPIRATION"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/restrictContainer"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/idInfoLabel"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="1,2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/conditionContainer"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/idInfoLabel"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/restrictContainer"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:text="A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/agyContainer"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/idInfoLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/conditionContainer"
+                android:fontFamily="serif"
+                android:text=" G11"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:id="@+id/expireContainer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/idInfoLabel"
+                android:layout_toRightOf="@id/agyContainer"
+                android:fontFamily="serif"
+                android:gravity="left"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="InvalidId" />
+
+
+            <TextView
+                android:id="@+id/licenseLabel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/restrictContainer"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="LICENSE NO."
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/licenseContainer"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/agyContainer"
+                android:layout_toRightOf="@+id/licenseLabel"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="60dp"
+                android:layout_below="@+id/expireContainer"
+                android:layout_toRightOf="@+id/licenseContainer"
+                android:src="@drawable/signature" />
+
+            <TextView
+                android:id="@+id/signed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:text="SEO DAL MI"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/licenseContainer"/>
+
+            <TextView
+                android:id="@+id/pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="260dp"
+                android:text="Assistant Secretary"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_below="@+id/signed"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
